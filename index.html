@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to 2025, Amna!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Allow vertical scrolling but prevent horizontal scrolling */
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 4em;
+            text-shadow: 0 0 20px #ff8a8a, 0 0 40px #ff4d4d, 0 0 60px #ff0000;
+            animation: dropDown 2s ease-out, fadeIn 3s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            opacity: 0;
+            animation: swipeIn 2s ease-out 2s forwards;
+        }
+
+        .emoji {
+            font-size: 2em;
+            margin: 10px 0;
+            animation: bounce 2s infinite;
+        }
+
+        p {
+            font-size: 1.4em;
+            margin: 15px;
+            line-height: 1.8;
+            color: #fff;
+            text-shadow: 0 0 5px #000;
+        }
+
+        .message-box {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 30px auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            animation: zoomIn 1.5s ease-out;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: #fff;
+            text-shadow: 0 0 5px #ff7171;
+        }
+
+        @keyframes dropDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes swipeIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            transform: rotate(-45deg);
+            animation: floatUp 5s linear infinite;
+        }
+
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 10px;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) scale(0.8);
+                opacity: 0.9;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HAPPY NEW YEAR! 🎉</h1>
+        <h2>Amna,! 💖</h2>
+    </div>
+    <div class="emoji">I LOVE YOU AMY🤍</div>
+    <div class="message-box">
+         <p>MERE PAYARI AMNA🥺💙,</p>
+        <p>AMY MERE JAAAN...SAB SY PHALE TO APKA BUAT BUAT SKUKRIYAAAA MERE ZINDGI ME ANY KALYE 🤌🤍 </p>
+        <p>MANE KABI NAHI SOCHA THA KY MUJE TM JASI PAYARI OR LOYAL BIWI MILE GI🥲💙 HMM BS MA KOSH NASSEB HO JO MUJE MILE MUJE YE 2024 APNIIII AKHRII SANS TAK YAAD RHYY GA 💗😭 IS SAAL NY MUJ SY BAUT KUCH CHEENA BE HA BUT MUJE UN CHEEZO KA KOI DUKH NAHI💙</p>
+        <p>BS TM MERE SHAAAT HO TO SAB POSSIBLE HA..BS MUJE IS TRAH TUMARA SHAAAT CHAIYEE TO HM PURI DUNIYA MIL KR JEEET SAKTE HA MA MANTA MUJ ME BUAT  SI BURI BATYEEN HN BUT MA ISKO THEK KRNR KI HESMHA KOSISH KRTA OR YE BE KOSHISH KRTA HO TUME HMESHA KUSH RAKHO..TM PY KABI GUSAA NA KRO OR AGR TM NARAZ BE JAO TO APKO PYAAR SY MNAOO MA WADAA KRTA HO KY YE ANY WALA SAAL BE MA IS SY BHEATR BAN KR DEKHAO GA OR TUMR HEMSHA KOSH RAKHO GA OR APKI ANKHO ME ANSO NAHI ANY DO GA😭🫂 MERE PASS LAFAZ NAHI APKI TAREEEEF BANYAN KRNE KALYE❤️ IN THE END I LOVE YOU AMNAAA I LOVE YOU SO MUCH...AND THANK YOU SO MUCH MERE ZINDAGI ME ANY KALYE🫂,<br>Ali ❤️</p>
+    </div>
+    <footer>
+        <p>i love you AMNAAA. 🌹</p>
+    </footer>
+
+    <!-- Floating hearts animation -->
+    <script>
+        for (let i = 0; i < 50; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDelay = Math.random() * 5 + 's';
+            heart.style.animationDuration = 4 + Math.random() * 2 + 's';
+            document.body.appendChild(heart);
+        }
+    </script>
+</body>
+</html>
